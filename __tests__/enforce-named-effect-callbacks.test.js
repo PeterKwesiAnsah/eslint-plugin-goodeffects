@@ -31,8 +31,7 @@ try {
 				code: invalidExpression,
 				errors: [
 					{
-						message:
-							'What does this effect do?? Consider using a named function expression rather than FunctionExpression, to provide meaningfull context to the effect.',
+						messageId: 'enforceName',
 					},
 				],
 			},

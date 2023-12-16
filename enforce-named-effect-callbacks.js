@@ -2,14 +2,20 @@ const reportMessage =
 	'What does this effect do?? Consider using a named function expression rather than {{functionType}}, to provide meaningfull context to the effect.';
 
 module.exports = {
-	type: 'suggestion',
-	docs: {
-		description:
-			'This rule enforces named functions to be used as callbacks in useEffects. This provides more context of the effect significantly improving readability of the code base',
-		recommended: true,
+	meta: {
+		type: 'suggestion',
+		messages: {
+			enforceName: reportMessage,
+		},
+		docs: {
+			description:
+				'This rule enforces named functions to be used as callbacks in useEffects. This provides more context of the effect significantly improving readability of the code base',
+			recommended: true,
+			///url:"" (URL to NPM package)
+		},
+		hasSuggestions: true,
+		schema: [],
 	},
-	hasSuggestions: true,
-	schema: [],
 	create(context) {
 		function narrowDownInvalidExpression(node) {
 			if (
@@ -19,7 +25,7 @@ module.exports = {
 			) {
 				context.report({
 					node,
-					message: reportMessage,
+					messageId: 'enforceName',
 					data: {
 						functionType: node.arguments[0]?.type,
 					},
