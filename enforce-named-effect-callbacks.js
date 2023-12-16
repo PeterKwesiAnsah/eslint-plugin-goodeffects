@@ -36,15 +36,15 @@ module.exports = {
 			CallExpression(node) {
 				//useEffect without React NameSpace or imported directly from React
 				if (
-					node.callee.type === 'Identifier' &&
-					node.callee.name === 'useEffect'
+					node?.callee?.type === 'Identifier' &&
+					node?.callee?.name === 'useEffect'
 				) {
 					narrowDownInvalidExpression(node);
 				}
 				//Accessing useEffect as property from an object
 				else if (
-					node.callee.object.type === 'Identifier' &&
-					node.callee.property.name === 'useEffect'
+					node?.callee?.object?.type === 'Identifier' &&
+					node?.callee?.property?.name === 'useEffect'
 				) {
 					narrowDownInvalidExpression(node);
 				}

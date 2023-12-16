@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-goodeffects",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "An eslint Plugin to enforce named useEffect callbacks and other powerfull useEffect patterns",
 	"main": "eslint-plugin-goodeffects.js",
 	"scripts": {
