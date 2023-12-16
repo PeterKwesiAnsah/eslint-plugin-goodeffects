@@ -1,13 +1,22 @@
 {
-	"name": "enforce-named-effect-callbacks",
+	"name": "eslint-plugin-goodeffects",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "An eslint Plugin to enforce named useEffect callbacks and other powerfull useEffect patterns",
+	"main": "eslint-plugin-goodeffects.js",
 	"scripts": {
 		"test": "node ./__tests__/enforce-named-effect-callbacks.test.js"
 	},
-	"keywords": [],
-	"author": "",
+	"peerDependencies": {
+		"eslint": ">=8.0.0"
+	},
+	"keywords": [
+		"eslint",
+		"eslintplugin",
+		"eslint-plugin",
+		"useEffect",
+		"patterns"
+	],
+	"author": "PeterKwesiAnsah",
 	"license": "ISC",
 	"devDependencies": {
 		"eslint": "^8.55.0"
