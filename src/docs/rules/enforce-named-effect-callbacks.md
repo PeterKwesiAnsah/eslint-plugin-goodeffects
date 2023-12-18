@@ -15,22 +15,23 @@ useEffect(() => {
 }, [dependency]);
 
 // Good
-const effectCallback = () => {
+const trackUserEvents = () => {
 	// ...effect logic
 };
 
-useEffect(effectCallback, [dependency]);
+useEffect(trackUserEvents, [dependency]);
 
 //OR
 
 // Bad
 useEffect(
-	function () {
-		// ...effect logic
-	},
-	[dependency]
+   function () {
+ // ...effect logic
+	
+},
+  [dependency]
 );
 
 // Good
-useEffect(function effectCallback() {}, [dependency]);
+useEffect(function trackUserEvents() {}, [dependency]);
 ```
