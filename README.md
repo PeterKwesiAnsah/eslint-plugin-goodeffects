@@ -25,6 +25,10 @@ npm install --save-dev eslint-plugin-goodeffects
 }
 ```
 
+## Rules
+
+1. [enforce-named-effect-callbacks](https://github.com/PeterKwesiAnsah/enforce-named-effect-callbacks/blob/main/src/docs/rules/enforce-named-effect-callbacks.md)
+
 ## Contributing to eslint-plugin-goodeffects
 
 Thank you for considering [contributing](https://github.com/PeterKwesiAnsah/enforce-named-effect-callbacks/blob/main/CONTRIBUTING.md) to eslint-plugin-goodeffects!🚀
