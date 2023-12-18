@@ -1,8 +1,12 @@
 {
 	"name": "eslint-plugin-goodeffects",
 	"version": "1.0.1",
-	"description": "An eslint Plugin to enforce named useEffect callbacks and other powerfull useEffect patterns",
+	"description": "An ESLint Plugin dedicated to enhancing code quality by enforcing best practices when utilizing the useEffect hook in React applications.",
 	"main": "eslint-plugin-goodeffects.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PeterKwesiAnsah/enforce-named-effect-callbacks"
+	},
 	"scripts": {
 		"test": "node ./__tests__/enforce-named-effect-callbacks.test.js"
 	},
@@ -14,10 +18,12 @@
 		"eslintplugin",
 		"eslint-plugin",
 		"useEffect",
-		"patterns"
+		"patterns",
+		"code quality",
+		"best practices"
 	],
 	"author": "PeterKwesiAnsah",
-	"license": "ISC",
+	"license": "MIT",
 	"devDependencies": {
 		"eslint": "^8.55.0"
 	}
