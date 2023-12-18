@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-goodeffects",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "An ESLint Plugin dedicated to enhancing code quality by enforcing best practices when utilizing the useEffect hook in React applications.",
 	"main": "eslint-plugin-goodeffects.js",
 	"repository": {
