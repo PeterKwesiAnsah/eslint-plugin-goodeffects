@@ -9,23 +9,10 @@ This ESLint rule is designed to improve code maintainability and readability by 
 This rule triggers an error when it detects an anonymous function used directly as a callback in the `useEffect` hook:
 
 ```javascript
-// Bad
-useEffect(() => {
-	// ...effect logic
-}, [dependency]);
-
-// Good
-const trackUserEvents = () => {
-	// ...effect logic
-};
-
-useEffect(trackUserEvents, [dependency]);
-
-//OR
 
 // Bad
 useEffect(
-   function () {
+ ()=> {
  // ...effect logic
 	
 },
@@ -33,5 +20,7 @@ useEffect(
 );
 
 // Good
-useEffect(function trackUserEvents() {}, [dependency]);
+useEffect(function trackUserEvents() {
+  //...effect logic
+}, [dependency]);
 ```
